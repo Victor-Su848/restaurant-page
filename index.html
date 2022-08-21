@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <script defer src="main.js"></script>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        :root {
+            --transparent-bg: rgba(0, 0, 0, .7);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background: url('./bg.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+
+
+            background: var(--transparent-bg);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            padding: 40px 0;
+            margin-left: 100px;
+        }
+
+        header ul {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+        }
+
+        header ul li {
+            font-size: 2rem;
+            margin-right: 25px;
+        }
+
+        header ul li:last-child {
+            margin: 0;
+        }
+
+
+
+        h1,
+        p,
+        li {
+            color: white;
+        }
+
+        .first-div {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin: 100px auto;
+            margin-bottom: 50px;
+            background: var(--transparent-bg);
+        }
+
+        .first-div p {
+            width: 50%;
+            margin: 15px;
+            line-height: 1.5rem;
+        }
+
+        .first-div img {
+            width: 200px;
+            height: auto;
+            border: 3px solid white;
+        }
+        .hours-and-address {
+            width: 300px;
+            height: 150px;
+            margin: 0 auto;
+            background: var(--transparent-bg);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .hours-and-address img {
+            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(221deg) brightness(104%) contrast(101%);
+            width: 3rem;
+        }
+        .hours, .address {
+            display: flex;
+            justify-content: space-around;
+        }
+        .hours img {
+            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(221deg) brightness(104%) contrast(101%);
+            width: 3rem;
+        }
+        .hours ul li, .address p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>Restaurant Page</h1>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Contact</li>
+            </ul>
+        </header>
+        <div class="first-div">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ligula odio. Phasellus quis sollicitudin
+                sem. In condimentum nibh nec maximus lobortis. Nullam sem mi, bibendum ac euismod at, sodales in velit.
+                Pellentesque dui sapien, luctus quis consectetur sed, posuere a sem. Donec sem augue, eleifend sit amet
+                massa sagittis, molestie laoreet urna. Sed efficitur nibh risus. Duis molestie non leo in vehicula.
+                Nulla
+                scelerisque, justo non congue rhoncus, metus dolor lobortis eros, et porta quam nisl id ex. Praesent nec
+                tellus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis enim nibh.</p>
+            <img src="./img.jpg" alt="alcohol being poured">
+        </div>
+        <div class="hours-and-address">
+            <div class="hours">
+                <img src="./clock.svg" alt="clock">
+                <ul>
+                    <li>Mon-Fri: 7pm-10pm</li>
+                    <li>Sat-Sun: 7pm-12am</li>
+                </ul>
+            </div>
+            <div class="address">
+                <img src="./map-marker.svg" alt="map-marker">
+                <p>866 Pleasant Rd.
+                    San Pablo, CA 94806</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
