@@ -1,1 +1,0 @@
-(self.webpackChunkrestaurant_page=self.webpackChunkrestaurant_page||[]).push([[908],{908:()=>{}}]);
