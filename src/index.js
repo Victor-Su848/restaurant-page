@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import pageLoad from './pages/page-load';
+import menuLoad from './pages/menu-load';
 import './styles.css';
 
 
@@ -21,4 +22,4 @@ document.body.appendChild(content);
  
   document.body.appendChild(component());*/
 
-pageLoad();
+menuLoad();

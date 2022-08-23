@@ -8,6 +8,7 @@ module.exports = {
         pageLoad: './src/pages/page-load.js',
         headerLoad: './src/pages/header-load.js',
         contactLoad: './src/pages/contact-load.js',
+        menuLoad: './src/pages/menu-load.js',
         createImage: './src/functions/create-image.js',
         tabSwitch: './src/functions/tab-switch',
     },

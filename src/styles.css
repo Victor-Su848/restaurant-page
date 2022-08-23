@@ -96,7 +96,7 @@ header ul li button {
     border: none;
     background: none;
 }
-header ul li button:hover {
+header ul li button:hover, header h1:hover {
     opacity: .75;
     cursor: pointer;
 }
@@ -129,7 +129,7 @@ li {
     border: 3px solid white;
 }
 /*hours and address styles*/
-.hours-and-address {
+.hours-and-address, .num-and-email{
     width: 300px;
     height: 150px;
     margin: 0 auto;
@@ -137,6 +137,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .hours-and-address img {
@@ -158,4 +159,27 @@ li {
 .hours ul li,
 .address p {
     font-size: 1.5rem;
+}
+
+/*contact page styles*/
+.num-and-email {
+    margin-top: 100px;
+}
+.num-and-email a {
+    color: white;
+    text-decoration: none;
+}
+.num-and-email a:hover {
+    opacity: .75;
+}
+
+/*menu page styles*/
+.menu {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu p {
+    text-align: center;
 }
