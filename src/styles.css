@@ -60,14 +60,11 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
+/*header styles*/
 header {
     display: flex;
     justify-content: space-between;
-
     width: 100%;
-
-
     background: var(--transparent-bg);
 }
 
@@ -84,15 +81,25 @@ header ul {
 }
 
 header ul li {
-    font-size: 2rem;
     margin-right: 25px;
 }
 
 header ul li:last-child {
     margin: 0;
 }
-
-
+header ul li button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    background: none;
+}
+header ul li button:hover {
+    opacity: .75;
+    cursor: pointer;
+}
 
 h1,
 p,
@@ -100,6 +107,7 @@ li {
     color: white;
 }
 
+/*first div styles*/
 .first-div {
     display: flex;
     justify-content: space-between;
@@ -120,7 +128,7 @@ li {
     height: auto;
     border: 3px solid white;
 }
-
+/*hours and address styles*/
 .hours-and-address {
     width: 300px;
     height: 150px;

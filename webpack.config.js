@@ -5,7 +5,11 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        pageLoad: './src/page-load.js',
+        pageLoad: './src/pages/page-load.js',
+        headerLoad: './src/pages/header-load.js',
+        contactLoad: './src/pages/contact-load.js',
+        createImage: './src/functions/create-image.js',
+        tabSwitch: './src/functions/tab-switch',
     },
     plugins: [
         new HtmlWebpackPlugin({

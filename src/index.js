@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import pageLoad from './page-load';
+import pageLoad from './pages/page-load';
 import './styles.css';
 
 
